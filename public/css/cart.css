@@ -1,0 +1,615 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    background: #45C2C2;
+}
+
+/* Nav_bar */
+
+.nav-bar {
+    background: #000000;
+    width: 100%;
+    height: 45px;
+    
+}
+
+.wrapper {
+    max-width: 1500px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    font-weight: 700; 
+    height: 60px;
+    margin-left: 40px;
+    margin-top: 15px;    
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 70px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px; 
+    align-items: center;
+    text-align: center;
+}
+
+.number{
+    color: rgb(0, 0, 0); 
+    font-size: 25px; 
+    background-color: white;
+    padding: 0px  10px;
+    border-radius: 10px;
+    font-size: 23px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Header */
+
+.header {
+    background: white;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+.header-wrapper {
+    max-width: 1500px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+/*nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}*/
+
+.header-items{
+    display: flex;
+    align-items: center;
+}
+
+.header-items li {
+    list-style: none;
+    margin-right: 130px;
+    margin-top: 2px;
+}
+
+.header-items li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+}
+
+.search-form {
+    margin-right: 100px;
+    margin-bottom: 8px;
+}
+
+/*input[type=text] {
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.search-form button {
+    width: 70px;
+    height: 25px;
+    float: right;
+    background: #E89213;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+}
+
+button:focus{
+    outline: none;
+}*/
+
+.search{
+    position: absolute;
+    bottom: 5px;
+    /**/
+}
+
+#myInput {
+    background-image: url('images/search.svg');
+    background-position: 5px;
+    background-repeat: no-repeat; 
+    background-size: 30px 20px;
+    width: 400px; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 5px 20px 5px 45px; /* Add some padding */
+    border: 1px solid rgb(129, 129, 129); /* Add a grey border */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 1000px;
+  }
+
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0px;
+    width: 400px;
+    position: absolute;
+    left: 1000px;
+  }
+  
+  #myUL li a {
+    /*border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: white; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+/*  cart items  
+
+.small-container{
+    margin: 0px 150px;
+}
+
+.small-container h1{
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    width: 190px;
+}
+
+.small-container table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-info a{
+    font-size: 15px; 
+    padding: 5px 10px; 
+    background: #E89213;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.product-info p{
+    font-size: 18px;
+}
+
+.product-info small{
+    font-size: 15px;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    background: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding:5px;
+}
+
+
+.img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table {
+    border-top: 3px solid black;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 915px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}*/
+
+.btn{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 10px;
+    background: #E89213;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* products-container */
+
+
+
+.products-container{
+    max-width: 1000px;
+    /* justify-content: space-around; */
+    margin: 0 auto;
+    margin-top: 40px;
+    /* flex-wrap: wrap;
+    display: flex; */
+}
+
+.product-header{
+    width: 100%;
+    /* max-width: 1000px; */
+    display: flex;
+    justify-content: flex-start;
+    /* border-bottom: 4px solid lightslategray; */
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid lightslategray;
+    font-family: Roboto;
+    font-size: 18px;
+    padding-left: 2px;
+}
+
+.product{
+    width: 65%;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 4px solid lightslategray;
+}
+
+/* .products{
+    display: flex;
+} */
+
+.container{
+    display: flex;
+}
+
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid lightslategray;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.quantity{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid lightslategray;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.quantitys{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid lightslategray;
+    font-family: Roboto;
+    font-size: 18px;
+    padding-left: 28px;
+}
+
+.total{
+    width: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid lightslategray;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.subtotal{
+    width: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid lightslategray;
+    font-family: Roboto;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.name{
+    position: relative;
+    top: -92px;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.decrement {
+    width: 20px;
+    cursor: pointer;
+}
+
+.increment{
+    width: 20px;
+    cursor: pointer;
+}
+
+.removeItem{
+    position: relative;
+    top: -90px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle{
+    width: 14%;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.basketTotal{
+    width: 9.5%;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.empty img{
+    width: 150px;
+    margin-left: 50px;
+}
+
+.empty{
+    margin-left: 360px;
+    padding: 50px 0px;
+    display: inline-block;
+}
+
+
+/*fotter*/
+
+.footer {
+    background-color: #848484;
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+.container1 {
+    max-width: 100%;
+    background-color: #848484;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col1 {
+    padding: 0px 15px;
+}
+
+.footer-col2 {
+    padding: 0px 15px;
+    margin-left: 130px;
+}
+
+.footer-mid ul li{
+    list-style: none;
+}
+
+.footer-mid li{
+    margin-bottom: 20px;
+    margin-left: -40px;
+    letter-spacing: 1px;
+}
+
+.footer-mid a{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.footer-mid a:hover{
+    border-bottom: 2px solid black;
+}
+
+.footer-mid p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom:20px;
+}
+    
+.footer-col1 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #000000;
+    margin-left: 70px;
+}
+
+.footer-col1 li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer .news-letter {
+    width: 345px;
+    height: 72px;
+} 
+
+.footer input[type=text] {
+    font-size: 20px;
+    font-family: 'Roboto';
+    width: 345px;
+    height: 35px;
+    margin-left: 70px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.footer button {
+    width: 100px;
+    height: 30px;
+    background: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: -33px;
+    left: 180px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer-col1 pre {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 70px;
+    width: 600px;
+    letter-spacing: 1px;
+}
+
+.footer-col1 a img {
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+}
+
+.footer-col2 h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.footer-col2 p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col2 pre {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}

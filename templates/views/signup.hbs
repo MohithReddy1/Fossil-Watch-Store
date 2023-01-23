@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{>header}}
+    <title>Fossil Watch Store - Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="images/logo.jpg" type="image/icon type">
+</head>
+<body style="font-family: 'Roboto'; 
+background: url(images/bg_wallpaper.jpg);
+background-repeat: no-repeat;
+background-size: 100% 720px;">
+
+    <p class="error">{{error}}</p>   
+
+    {{>navbar}}
+
+    <div class="heading">
+
+        <h4>Contact Us</h4>
+        <p><img style="width: 40px; height: 30px;" src="images/Gmail Icon.svg" alt="gmail"> <span style="margin-left: 20px; font-size: 25px;">customercare.in@fossil.com</span></p>
+
+        <p><img style="width: 40px; height: 40px;" src="images/Telephone.svg" alt="telephone"> <span style="margin-left: 20px; font-size: 25px;">0008009190951</span></p>
+        
+    </div>
+
+    <div class="signup">
+        <form name="form1" method="POST" >
+        {{!-- <form name="form1" action="" onsubmit="" method="POST" ></form> --}}
+            <table>
+                <tr><h1>Sign up</h1></tr>
+
+                <tr><label for="username"><h2>Username<span class="required">*</span></h2></label></tr>
+                <tr><input class="box" type="text" name="username" placeholder="Enter Username" required></tr>
+
+                <tr><label for="email"><h2>Email Address <span class="required">*</span></h2></label></tr>
+                <tr><input class="box" type="email" name="email" placeholder="Enter Email Address" required></tr>
+
+                <tr><label for="phone"><h2>Phone Number <span class="required">*</span></h2></label></tr>
+                <tr><input class="box" type="number" name="phone" placeholder="Enter Phone Number" required></tr>
+
+                <tr><label for="password"><h2>Password <span class="required">*</span></h2></label></tr>
+                <tr><input class="box" type="password" name="password" id="password" placeholder="Enter Password" required></tr>
+                <i class="material-icons" style="font-size: 30px;" onclick="change(this)">visibility_off</i>
+                
+                <tr><label for="confirmpassword"><h2>Confirm Password <span class="required">*</span></h2></label></tr>
+                <tr><input class="box" type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter Confirm Password" required></tr>
+                {{!-- <i class="material-icons" style="font-size: 30px;" onclick="change(this)">visibility_off</i> --}}
+
+                <tr><h3><input type="checkbox" name="checkbox" required> I accept Terms and Conditions</h3></tr>
+
+                <tr><button class="signup-btn" onclick="validate()" type="submit">SignUp</button></tr>
+
+                {{!-- <tr><input type="submit" name="submitDetails" value="SignUp"></tr> --}}
+                
+                <tr><pre>Already have an account? <a href="signin">Sign in</a></pre></tr>
+
+            </table>
+        </form>
+    </div>
+
+    <script>
+
+        function validate()
+        {
+           if (document.forms["form1"]["username"].value=="")
+           {
+               alert("Please fill all the fields.");
+           }
+        }
+
+        function change(x){
+            if(x.innerHTML === "visibility"){
+                x.innerHTML = "visibility_off";
+            }else{
+                x.innerHTML = "visibility";
+            }
+            var pwd = document.getElementById("password");
+            if(pwd.type === "password"){
+                pwd.type = "text";
+            }else{
+                pwd.type = "password";
+            }
+
+            var pwd1 = document.getElementById("confirmpassword");
+            if(pwd1.type === "password"){
+                pwd1.type = "text";
+            }else{
+                pwd1.type = "password";
+            }
+
+        }
+        if(document.querySelector(".error").innerHTML==0){
+            alert("Password are not matching")
+        }
+    </script>
+
+
+</body>
+</html>

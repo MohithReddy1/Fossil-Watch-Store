@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossil Watch Store - Sign In</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="images/logo.jpg" type="image/icon type">
+</head>
+
+<body style="font-family: 'Roboto'; 
+background: url(images/bg_wallpaper.jpg);
+background-repeat: no-repeat;
+background-size: 100% 720px;">
+
+<p class="error">{{error}}</p>    
+
+    <div class="nav-bar">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    Fossil
+                </div>
+                <ul class="nav-items">
+                    <li>
+                         <a href="index">Home</a>
+                    </li>
+                    <li>
+                        <a href="signup">SignUp</a>
+                    </li>
+                </ul>                
+            </nav>
+        </div>
+    </div>
+
+    <div class="heading">
+
+        <h4>Contact Us</h4>
+        <p><img style="width: 40px; height: 30px;" src="images/Gmail Icon.svg" alt="gmail"> <span style="margin-left: 20px; font-size: 25px;">customercare.in@fossil.com</span></p>
+
+        <p><img style="width: 40px; height: 40px;" src="images/Telephone.svg" alt="telephone"> <span style="margin-left: 20px; font-size: 25px;">0008009190951</span></p>
+
+    </div>
+    
+    <div class="signup">
+        <form name="form1" method="POST" >
+            <table>
+                <tr><h1>Sign in</h1></tr>
+
+                <tr><label for="email"><h2>Email<span class="required">*</span></h2></label></tr>
+                <tr><input class="box" type="email" placeholder="Enter Email Address" name="email" required></tr>
+
+                <tr><label for="password"><h2>Password<span class="required">*</span></h2></label></tr>
+
+                
+                <tr><input class="box" type="password" name="password" id="password" placeholder="Enter Password" required></tr>
+                <i class="material-icons" style="font-size: 30px;" onclick="change(this)">visibility_off</i> 
+                
+                
+                <tr><h3><input type="checkbox"> Remember me</h3></tr>
+                
+                <tr><button class="signin-btn" onclick="validate()" type="submit">Sign in</button></tr>
+                <br>
+                <br>
+                <tr><a class="forgot" href="#">Forgot Password?</a></tr>
+
+                <tr><pre>New To Fossil? <a href="signup">Sign up</a></pre></tr>
+
+            </table>
+        </form>    
+    </div>
+
+    <script>
+
+        function validate()
+        {
+           if (document.forms["form1"]["email"].value=="")
+           {
+               alert("Please fill all the fields.");
+           }
+        }
+
+        function change(x){
+            if(x.innerHTML === "visibility"){
+                x.innerHTML = "visibility_off";
+            }else{
+                x.innerHTML = "visibility";
+            }
+            var pwd = document.getElementById("password");
+            if(pwd.type === "password"){
+                pwd.type = "text";
+            }else{
+                pwd.type = "password";
+            }
+        }
+
+        if(document.querySelector(".error").innerHTML==0){
+            alert("Invalid Email/ Password")
+        }
+        
+
+    </script>
+
+    
+</body>
+</html>

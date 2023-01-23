@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* body {
+    font-family: 'Roboto'; 
+    background: url(bg_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 720px;       
+} */
+
+.error{
+    color: white;
+    font-size: 50px;
+    display: none;
+}
+
+
+.nav-bar {
+    width: 100%;
+    height: 50px;
+}
+
+.wrapper {
+    max-width: 1500px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px; 
+    height: 60px;
+    margin-left: 60px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 80px; 
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+    margin-left: 120px;
+    margin-top: 200px;
+}
+
+.heading h4{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.heading p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.heading p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.signup{
+    width: 500px;
+    height: 620px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    left: 910px;
+    top: 75px;
+}
+
+.signup h1{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    color: #000;
+}
+
+.signup h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+    margin-left: 75px;
+    margin-bottom: 2px;
+}
+
+.box{
+    margin: 0px 0px 15px 75px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    width: 350px;
+    height: 35px;
+    border: none;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+i{
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+
+/* Remove Arrows/Spinnersfor number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+h3{
+    margin-top: 5px;
+    margin-left: 80px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+h3 input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+}
+
+.signup-btn{
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 111, 255, 0.63);
+    margin-left: 95px;
+    padding: 5px 120px;
+    text-decoration: none;
+    color: #000; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.signup pre {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+pre a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+}
+
+pre a:hover{
+    border-bottom: 2px solid blue;
+}
+
+.required{
+    color: red;
+}

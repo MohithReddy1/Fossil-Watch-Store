@@ -1,0 +1,610 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    background: #45C2C2;
+}
+
+/* Nav_bar */
+
+.nav-bar {
+    background: #000000;
+    width: 100%;
+    height: 45px;
+    
+}
+
+.wrapper {
+    max-width: 1500px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    font-weight: 700; 
+    height: 60px;
+    margin-left: 40px;
+    margin-top: 15px;    
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 70px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px; 
+    align-items: center;
+    text-align: center;
+}
+
+.number{
+    color: rgb(0, 0, 0); 
+    font-size: 25px; 
+    background-color: white;
+    padding: 0px  10px;
+    border-radius: 10px;
+    font-size: 23px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Header */
+
+.header {
+    background: white;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+.header-wrapper {
+    max-width: 1500px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+/*nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}*/
+
+.header-items{
+    display: flex;
+    align-items: center;
+}
+
+.header-items li {
+    list-style: none;
+    margin-right: 130px;
+    margin-top: 2px;
+}
+
+.header-items li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+}
+
+.search-form {
+    margin-right: 100px;
+    margin-bottom: 8px;
+}
+
+/*input[type=text] {
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.search-form button {
+    width: 70px;
+    height: 25px;
+    float: right;
+    background: #E89213;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+}
+
+button:focus{
+    outline: none;
+}*/
+
+.search{
+    position: absolute;
+    bottom: 5px;
+    /**/
+}
+
+#myInput {
+    background-image: url('images/search.svg');
+    background-position: 5px;
+    background-repeat: no-repeat; 
+    background-size: 30px 20px;
+    width: 400px; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 5px 20px 5px 45px; /* Add some padding */
+    border: 1px solid rgb(129, 129, 129); /* Add a grey border */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 1000px;
+  }
+
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0px;
+    width: 400px;
+    position: absolute;
+    left: 1000px;
+  }
+  
+  #myUL li a {
+    /*border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: white; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+.filter{
+    margin-top: 10px;
+    display: flex;
+}
+
+.filter h1{
+    margin-left: 35px;
+    color: #000000;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 30px;
+}
+
+.filter select{
+    margin-left: 1050px;
+    height: 40px;
+    font-size: 15px;
+    border: 2px solid rgb(59, 58, 58);
+    border-radius: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.filter select:focus{
+    outline: none;
+}
+
+/* Products */
+
+.container{
+    margin-top: 25px;
+    margin-left: 90px;
+    /*display: none;*/
+}
+.box-container{
+    float: left;
+    margin-right: 95px;
+}
+
+.box{
+    background-color: white;
+    width: 255px;
+    border-radius: 10px;
+}
+
+.box .img{
+    height: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.box h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.box ul{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    padding-bottom: 5px;
+}
+
+.box ul li{
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.product ul{
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.product ul li{
+    font-family: Roboto;
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    width: 118px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: #E89213;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.overlay#blur.active{
+    filter: blur(15px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.add-cart{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*overlay*/
+
+#popup{
+    margin-left: 350px;
+    position: fixed;
+    top: 25%;
+    left: 1%;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    width: 850px;
+    height: 370px;
+    background-color:white;
+    border-radius: 15px;
+}
+
+#popup.active{
+    top: 20%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.box1 button{
+    background-color: white;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 800px;
+    cursor: pointer;
+    border: none;
+}
+
+.box1 button img{
+    width: 25px;
+    height: 25px;
+}
+
+.box1 p{
+    position: absolute;
+    top: 45px;
+    left: 270px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.box1 .img{
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.box1 ul{
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 90px;
+    left: 330px;
+}
+
+.box1 ul li{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.details h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+    top: 135px;
+    left: 270px;
+}
+
+.details ul{
+    align-items: center;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+}
+
+.details ul li{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+.product1 ul{
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+    margin-top: 20px;
+    position: absolute;
+    top: 315px;
+    left: 350px;
+}
+
+.product1 ul li{
+    font-family: Roboto;
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    width: 118px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: #E89213;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+/*fotter*/
+
+.footer {
+    background-color: #848484;
+    margin-top: 1160px;
+    padding-top: 20px;
+}
+
+.container1 {
+    max-width: 100%;
+    background-color: #848484;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col1 {
+    padding: 0px 15px;
+}
+
+.footer-col2 {
+    padding: 0px 15px;
+    margin-left: 130px;
+}
+
+
+.footer-mid ul li{
+    list-style: none;
+}
+
+.footer-mid li{
+    margin-bottom: 20px;
+    margin-left: -40px;
+    letter-spacing: 1px;
+}
+
+.footer-mid a{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.footer-mid a:hover{
+    border-bottom: 2px solid black;
+}
+
+.footer-mid h5{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom:20px;
+}
+    
+.footer-col1 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #000000;
+    margin-left: 70px;
+}
+
+.footer-col1 li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer .news-letter {
+    width: 345px;
+    height: 72px;
+} 
+
+.footer .news-letter {
+    width: 345px;
+    height: 72px;
+} 
+
+.footer input[type=text] {
+    font-size: 20px;
+    font-family: 'Roboto';
+    width: 345px;
+    height: 35px;
+    margin-left: 70px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.footer button {
+    width: 100px;
+    height: 30px;
+    background: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: -33px;
+    left: 420px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-col1 pre {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 70px;
+    width: 600px;
+    letter-spacing: 1px;
+}
+
+.footer-col1 a img {
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+}
+
+.footer-col2 h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.footer-col2 p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col2 pre {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+

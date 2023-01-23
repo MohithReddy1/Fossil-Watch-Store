@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossil Watch Store - Smart Watches</title>
+    <link rel="stylesheet" href="css/smart_watches.css">
+    <link rel="icon" href="images/logo.jpg" type="image/icon type">
+</head>
+<body>
+    <div class="overlay"  id="blur">
+    <div class="nav-bar">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    Fossil
+                </div>
+                <ul class="nav-items">
+                    <li style="margin-right: 0px;">
+                        <img style="width: 25px; height: 25px;" src="images/person.svg" alt="Username">
+                    </li>
+                    <li>
+                         <a href="#">{{user}}</a>
+                    </li>
+                    <li>
+                        <a href="orders">Orders</a>
+                    </li>
+                    <li style="margin-right: 0px;">
+                        <img style="width: 25px; height: 25px; margin-top: 5px;" src="images/shopping_cart.svg" alt="cart">
+                    </li>
+                    <li class="cart">
+                        <a style="  margin-right: 0px;" href="cart ">Cart</a><span class="number">0</span>
+                    </li>
+                    <li style="margin-right: 0px;">
+                        <img style="width: 30px; height: 30px; margin-top: 5px;" src="images/Signout.svg" alt="Sign out">
+                    </li>
+                    <li style="margin-right: 20px;" > 
+                         <a href="signin">Sign out</a>
+                    </li>
+                </ul>                
+            </nav>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-wrapper">
+            <nav1>
+                <ul class="header-items">
+                    <li>
+                        <a href="after_login">Home</a>
+                    </li>
+                    <li>
+                        <a href="analog_watches">Analog Watches</a>
+                    </li>
+                    <li>
+                        <a style="color: red; font-size: 30px; text-align: center;" href="smart_watches">Smart Watches</a>
+                    </li>
+                </ul> 
+                
+                    <input style="background-image: url('images/search.svg'); background-position: 5px; background-repeat: no-repeat; 
+                    background-size: 30px 20px;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search here..">
+
+                    <ul id="myUL">
+                    <li><a onclick="overlay()" href="#">Fossil Men's Gen 4 Explorist Smart Watch</a></li>
+                    <li><a href="#">Fossil Gen 4 Sloane Women's Smart Watch</a></li>
+
+                    <li><a href="#">Fossil Men's Gen 3 Explorist Smart Watch</a></li>
+                    <li><a href="#">Fossil Gen 5 44mm Women's Smart Watch</a></li>
+
+                    <li><a href="#">Fossil Men's Gen 5E 44mm Smart Watch</a></li>
+                    <li><a href="#">Fossil Gen 5 Julianna Women's Smart Watch</a></li>
+                    </ul>
+ 
+            </nav1>
+        </div>
+    </div>
+    
+    <div class="filter">
+        <h1>All Products</h1>
+        <select onchange="location = this.options[this.selectedIndex].value;">
+            <option value="smart_watches">All Products</option>
+            <option value="mens_smart">Mens Watches</option>
+            <option value="womens_smart">Womens Watches</option>
+        </select>
+    </div>
+
+
+    <section id="container">
+
+        <div class="box-container">
+        <div class="box">
+            <img onclick="overlay()" src="images/smart1.png" class="img">
+            <h2>Fossil Mens Gen 4 Explorist Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>16099</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="box-container">
+
+        <div class="box">
+            <img src="images/smart4.png" class="img">
+            <h2>Fossil Gen 4 Sloane Womens Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>8395</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+        <div style="margin-right: 0px;" class="box-container">
+
+        <div class="box">
+            <img src="images/smart3.png" class="img">
+            <h2>Fossil Mens Gen 3 Explorist Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>19995</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/smart5.png" class="img">
+            <h2>Fossil Gen 5 44mm Womens Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>22995</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px; margin-bottom: 50px;" class="box-container">
+
+        <div class="box">
+            <img src="images/smart2.png" class="img">
+            <h2>Fossil Mens Gen 5E 44mm Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>12774</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px; margin-bottom: 50px;"  class="box-container">
+
+        <div class="box">
+            <img src="images/smart6.png" class="img">
+            <h2>Fossil Gen 5 Julianna Womens Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>22995</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div> 
+
+    <div style="margin-top: 50px; margin-bottom: 50px;"  class="box-container">
+
+        <div class="box">
+            <img src="images/smart4.png" class="img">
+            <h2>Fossil Gen 4 Sloane Womens Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>8395</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px; margin-bottom: 50px;"  class="box-container">
+        <div class="box">
+            <img onclick="overlay()" src="images/smart1.png" class="img">
+            <h2>Fossil Mens Gen 4 Explorist Smart Watch</h2>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>16099</li>
+            </ul>
+            
+        </div>
+        <div class="product">
+            <ul>
+                <li style="margin-right: 15px;">
+                    <a class="add-cart" href="#">Add to Cart</a>
+                </li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!--fotter-->
+<footer class="footer">
+    <div class="container1">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Stay Connected</h3>
+    <form class="news-letter">
+        <input type="text" placeholder="Enter Email Address">
+        <button>Submit</button>
+    </form> 
+
+    <pre>
+By subscribing to our newsletter you agree to our 
+privacy policy. * (restrictions and exclusions apply)
+    </pre>
+   <!--
+    <ul>
+        <li><a href="https://www.facebook.com/Fossil.IN/" target="_blank"><img src="images/Facebook Icon.svg" alt="facebook"></a></li>
+        <li><a href="https://twitter.com/fossil" target="_blank"><img src="images/twitter.svg" alt="twitter"></a></li>
+        <li><a href="https://www.instagram.com/fossil.in/" target="_blank"><img src="images/insta.svg" alt="instagram"></a></li>
+        <li><a href="https://www.youtube.com/fossil" target="_blank"><img src="images/youtube.svg" alt="youtube"></a></li>
+    </ul>
+    --> 
+
+            </div>
+
+            <div class="footer-mid">
+                <h5>Social Media</h5>
+                <ul>
+                    <li><a href="https://www.facebook.com/Fossil.IN/" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/fossil" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/fossil.in/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/fossil" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h4>Contact us</h4>
+        <p><img style="width: 40px; height: 30px;" src="images/Gmail Icon.svg" alt="gmail"> <span style="margin-left: 20px;">customercare.in@fossil.com</span></p>
+
+        <p><img style="width: 40px; height: 40px;" src="images/Telephone1.svg" alt="telephone"> <span style="margin-left: 20px;">0008009190951</span></p>
+
+<pre>
+For Order related queries :
+(Order Status, Return, Refund, General queries
+& Warranty Claim)
+            
+Hours: Monday - Sunday : 10:00am - 7:00pm
+(Excluding Public Holidays)
+</pre>                 
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</div>
+
+<!--  overlay   -->
+    <div id="popup">
+        <div class="box1">
+            <button><img src="images/close.svg" onclick="overlay()"></button>
+            <img src="images/smart1.png" class="img">
+            <p>Fossil Mens Gen 4 Explorist Smart Watch</p>
+            <ul>
+                <li style="margin-right: 5px;">₹</li>
+                <li>16099</li>
+            </ul>
+        </div>
+        <div class="details">
+            <h4>Details</h4>
+            <ul>
+                <li>Smartwatches powered with Wear OS by Google work with iPhone and Android Phones</li>
+                <li>Heart Rate and Activity Tracking using Google Fit; Built-in GPS for distance
+                    tracking; Swimproof design 3ATM; Google Assistant built in - it’s your own
+                    personal Google, always ready to help; Speed through checkout with your 
+                    watch using Google Pay </li>
+                <li>Estimated 24 hour battery life, based on usage plus 2 additional days in
+                    low-power mode; magnetic USB rapid charger included; charge up to 80% 
+                    in under an hour</li>
+                {{!-- <li>Case Material: Stainless Steel. Platform: Luther</li>
+                <li>Dial Diameter: 44mm, Circumference: 200+/- 5mm</li>
+                <li>Water Resistance Depth: 50 meters</li> --}}
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function overlay(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active'); 
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+        document.getElementById('myInput').value="";
+        myFunction();
+    }
+
+        myFunction();
+        function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+        
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length != 0) {
+            li[i].style.display = "";
+            } else {
+            li[i].style.display = "none";
+            }
+        }
+        }
+    </script>
+
+    <script src="js/smart.js"></script>
+
+</body>
+</html>

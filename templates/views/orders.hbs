@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossil Watch Store - Orders</title>
+    <link rel="stylesheet" href="css/orders.css">
+    <link rel="icon" href="images/logo.jpg" type="image/icon type">
+</head>
+<body>
+ <!--nav-bar-->
+<div class="nav-bar">
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                Fossil
+            </div>
+            <ul class="nav-items">
+                <li style="margin-right: 0px;">
+                    <img style="width: 25px; height: 25px;" src="images/person.svg" alt="Username">
+                </li>
+                <li>
+                     <a href="#">{{user}}</a>
+                </li>
+                <li>
+                    <a href="orders">Orders</a>
+                </li>
+                <li style="margin-right: 0px;">
+                    <img style="width: 25px; height: 25px; margin-top: 5px;" src="images/shopping_cart.svg" alt="cart">
+                </li>
+                <li class="cart">
+                    <a style="  margin-right: 0px;" href="cart ">Cart</a><span class="number">0</span>
+                </li>
+                <li style="margin-right: 0px;">
+                    <img style="width: 30px; height: 30px; margin-top: 5px;" src="images/Signout.svg" alt="Sign out">
+                </li>
+                <li style="margin-right: 20px;" > 
+                    <a href="signin">Sign out</a>
+                </li>
+            </ul>                
+        </nav>
+    </div>
+</div>
+
+    <div class="header">
+        <div class="header-wrapper">
+            <nav1>
+                <ul class="header-items">
+                    <li>
+                        <a href="after_login">Home</a>
+                    </li>
+                    <li>
+                        <a href="analog_watches">Analog Watches</a>
+                    </li>
+                    <li>
+                        <a href="smart_watches">Smart Watches</a>
+                    </li>
+                </ul> 
+                <input style="background-image: url('images/search.svg'); background-position: 5px; background-repeat: no-repeat; 
+                    background-size: 30px 20px;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search here..">  
+            </nav1>
+        </div>
+    </div>
+
+
+
+    <!--  orders   -->
+
+    <div class="heading">
+        <h1>Your Orders</h1>
+        {{!-- <input type="text" placeholder="Search orders here">
+        <button>Search Orders</button> --}}
+    </div>
+
+    <div id="head-container">
+        <button id="allOrders" class="btn active" onclick="allOrders()">Orders</button>
+        <button id="cancelled" class="btn" onclick="cancelled()">Cancelled Orders</button>
+    </div>
+
+    <div class="container">
+
+        <div class="filterDiv Successful-Orders">
+
+            <div class="row1">
+                <ul style="margin-left: -10px;">
+                    <li><h2>ORDER PLACED</h2></li>
+                    <li><p>24 April 2021</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>Total</h2></li>
+                    <li><p><span style="font-weight: bold;">₹</span>10,995</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>SHIP TO</h2></li>
+                    <li><p>5-144, xyz street, ABC - 520200</p></li>
+                </ul>
+
+                <ul style="margin-left: 150px;">
+                    <li><h2>ORDER # 408-8597942-6532319</h2></li>
+                    <li><a href="#">View order details</a></li>
+                </ul>
+            </div>
+
+            <div class="row2">
+                <h6>Successful</h6>
+                <p>Paid on: 24 April 2021</p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                            <img src="images/analog3.png" class="img">
+                            <div>
+                                <p>Fossil Townsman Analog Black Dial Men's Watch</p>
+                                <small>Price: 10,995</small>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <button>Buy it again</button>
+                            </div>
+                        </div>
+
+                        </td>
+
+                        <td>
+                            <div class="buttons">
+                                <button><p>Ask Product Question</p></button>
+                                <br>
+                                <button><p> Write a product review</p></button>
+                                <br>
+                                <button><p>Archive order</p></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="filterDiv Cancelled-Orders">
+
+            <div class="row1">
+                <ul style="margin-left: -10px;">
+                    <li><h2>ORDER PLACED</h2></li>
+                    <li><p>10 February 2021</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>Total</h2></li>
+                    <li><p><span style="font-weight: bold;">₹</span>16,099</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>SHIP TO</h2></li>
+                    <li><p>5-144, xyz street, ABC - 520200</p></li>
+                </ul>
+
+                <ul style="margin-left: 150px;">
+                    <li><h2>ORDER # 423-7399140-4753945</h2></li>
+                    <li><a href="#">View order details</a></li>
+                </ul>
+            </div>
+
+            <div class="row2">
+                <h6>Cancelled</h6>
+                <p>Your refund has been initiated</p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                            <img src="images/smart1.png" class="img">
+                            <div>
+                                <p>Fossil Men's Gen 4 Explorist Smart Watch</p>
+                                <small>Price: 16,099</small>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <button>Buy it again</button>
+                            </div>
+                        </div>
+
+                        </td>
+
+                        <td>
+                            <div class="buttons">
+                                <button><p>Ask Product Question</p></button>
+                                <br>
+                                <button><p> Write a product review</p></button>
+                                <br>
+                                <button><p>Archive order</p></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="filterDiv Successful-Orders">
+
+            <div class="row1">
+                <ul style="margin-left: -10px;">
+                    <li><h2>ORDER PLACED</h2></li>
+                    <li><p>30 December 2020</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>Total</h2></li>
+                    <li><p><span style="font-weight: bold;">₹</span> 22,995</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>SHIP TO</h2></li>
+                    <li><p>5-144, xyz street, ABC - 520200</p></li>
+                </ul>
+
+                <ul style="margin-left: 150px;">
+                    <li><h2>ORDER # 406-7915490-1888358</h2></li>
+                    <li><a href="#">View order details</a></li>
+                </ul>
+            </div>
+
+            <div class="row2">
+                <h6>Successful</h6>
+                <p>Paid on: 24 April 2021</p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                            <img src="images/smart5.png" class="img">
+                            <div>
+                                <p>Fossil Gen 5 44mm Women's Smart Watch</p>
+                                <small>Price: 22,995</small>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <button>Buy it again</button>
+                            </div>
+                        </div>
+
+                        </td>
+
+                        <td>
+                            <div class="buttons">
+                                <button><p>Ask Product Question</p></button>
+                                <br>
+                                <button><p> Write a product review</p></button>
+                                <br>
+                                <button><p>Archive order</p></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="filterDiv Cancelled-Orders">
+
+            <div class="row1">
+                <ul style="margin-left: -10px;">
+                    <li><h2>ORDER PLACED</h2></li>
+                    <li><p>05 October 2020</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>Total</h2></li>
+                    <li><p><span style="font-weight: bold;">₹</span>10,583</p></li>
+                </ul>
+
+                <ul style="margin-left: 50px;">
+                    <li><h2>SHIP TO</h2></li>
+                    <li><p>5-144, xyz street, ABC - 520200</p></li>
+                </ul>
+
+                <ul style="margin-left: 150px;">
+                    <li><h2>ORDER # 412-7569140-4689923</h2></li>
+                    <li><a href="#">View order details</a></li>
+                </ul>
+            </div>
+
+            <div class="row2">
+                <h6>Cancelled</h6>
+                <p>Your refund has been initiated</p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                            <img src="images/analog6.png" class="img">
+                            <div>
+                                <p>Women's Fossil Watch Carlie ES4442 Quartz</p>
+                                <small>Price: 10,583</small>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <button>Buy it again</button>
+                            </div>
+                        </div>
+                        </td>
+
+                        <td>
+                            <div class="buttons">
+                                <button><p>Ask Product Question</p></button>
+                                <br>
+                                <button><p> Write a product review</p></button>
+                                <br>
+                                <button><p>Archive order</p></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+<!--fotter-->
+<footer class="footer">
+    <div class="container1">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Stay Connected</h3>
+    <form class="news-letter">
+        <input type="text" placeholder="Enter Email Address">
+        <button>Submit</button>
+    </form> 
+
+    <pre>
+By subscribing to our newsletter you agree to our 
+privacy policy. * (restrictions and exclusions apply)
+    </pre>
+   <!--
+    <ul>
+        <li><a href="https://www.facebook.com/Fossil.IN/" target="_blank"><img src="images/Facebook Icon.svg" alt="facebook"></a></li>
+        <li><a href="https://twitter.com/fossil" target="_blank"><img src="images/twitter.svg" alt="twitter"></a></li>
+        <li><a href="https://www.instagram.com/fossil.in/" target="_blank"><img src="images/insta.svg" alt="instagram"></a></li>
+        <li><a href="https://www.youtube.com/fossil" target="_blank"><img src="images/youtube.svg" alt="youtube"></a></li>
+    </ul>
+    --> 
+
+            </div>
+
+            <div class="footer-mid">
+                <h5>Social Media</h5>
+                <ul>
+                    <li><a href="https://www.facebook.com/Fossil.IN/" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/fossil" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/fossil.in/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/fossil" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h4>Contact us</h4>
+        <p><img style="width: 40px; height: 30px;" src="images/Gmail Icon.svg" alt="gmail"> <span style="margin-left: 20px;">customercare.in@fossil.com</span></p>
+
+        <p><img style="width: 40px; height: 40px;" src="images/Telephone1.svg" alt="telephone"> <span style="margin-left: 20px;">0008009190951</span></p>
+
+<pre>
+For Order related queries :
+(Order Status, Return, Refund, General queries
+& Warranty Claim)
+            
+Hours: Monday - Sunday : 10:00am - 7:00pm
+(Excluding Public Holidays)
+</pre>                 
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script>
+
+    function cancelled()
+    {
+        let a = document.querySelectorAll(".Successful-Orders");
+        for(let x = 0; x<a.length; x++)
+        {
+            a[x].style.display="none";
+        }
+        
+        document.getElementById("cancelled").classList.add("active");
+        document.getElementById("allOrders").classList.remove("active");
+    }
+
+    function allOrders()
+    {
+        let b = document.querySelectorAll(".Successful-Orders");
+        for(let x = 0; x<b.length; x++)
+        {
+            b[x].style.display="block";
+        }
+        document.getElementById("allOrders").classList.add("active");
+        document.getElementById("cancelled").classList.remove("active");        
+    }
+
+</script>
+
+<script src="js/smart.js"></script>
+
+</body>
+</html>
